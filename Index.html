@@ -13,7 +13,7 @@
                 <img src="./Images/logo.png" alt="Logo">
             </div>
             <nav>
-                <ul>
+                <ul class="nav-links">
                     <li>
                         <a href="#Hero">Home</a>
                     </li>
@@ -31,6 +31,11 @@
                     </li>
                 </ul>
             </nav>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </header>
     </body>
     <main>
@@ -112,4 +117,23 @@
         <section id="FAQ"></section>
         <section id="Contact"></section>
     </main>
+    <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    const navItems = document.querySelectorAll('.nav-links li'); // Select all links inside the nav
+
+    // Toggle navigation when hamburger is clicked
+    hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('nav-active');
+    hamburger.classList.toggle('toggle');
+});
+
+    // Close menu when a link is clicked
+    navItems.forEach(item => {
+    item.addEventListener('click', () => {
+        navLinks.classList.remove('nav-active'); // Close the menu
+        hamburger.classList.remove('toggle');    // Reset the hamburger icon
+    });
+});
+    </script>
 </html>
