@@ -1,139 +1,201 @@
 <!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <title>E-commerce</title>
-    </head>
-    <body>
-        <header class="header">
-            <div class="logo">
-                <img src="./Images/logo.png" alt="Logo">
-            </div>
-            <nav>
-                <ul class="nav-links">
-                    <li>
-                        <a href="#Hero">Home</a>
-                    </li>
-                    <li>
-                        <a href="#Landmarks">Landmarks</a>
-                    </li>
-                    <li>
-                        <a href="#Historical">History</a>
-                    </li>
-                    <li>
-                        <a href="#FAQ">FAQ</a>
-                    </li>
-                    <li>
-                        <a href="#Contact">Contact Us</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </header>
-    </body>
-    <main>
-        <section id="Hero">
-            <div>
-                <h1>Discover the Majestic Landmarks of Saudi Arabia</h1>
-                <p>Journey through time to witness the beauty and significance of this great Kingdom</p>
-                <button>
-                    <a href="#Landmarks">Explore Now</a>
-                </button>
-            </div>
-            <video
-                autoplay
-                muted
-                loop
-                playsinline
-                class="hero-video"
-                disablePictureInPicture
-            >
-                <source src="./videos/KSA2.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </section>
-        <section id="Landmarks">
-            <div class="container">
-                <div class="card">
-                    <img src="images/A'arifFort.jpg" alt="A'arif Fort">
-                    <h3>A'arif Fort</h3>
-                    <div class="description">A historical fort located in the city of Hail, A'arif Fort offers stunning views from its mountain peak, featuring solid mud-brick walls and impressive wooden doors, making it an ideal destination for history enthusiasts and photographers alike.</div>
-                </div>
-                <div class="card">
-                    <img src="images/Al Malad Castle.jpg" alt="Al Malad Castle">
-                    <h3>Al Malad Castle</h3>
-                    <div class="description">Nestled in the mountains of Saudi Arabia, Al Malad Castle is a historical site built for military observation and food storage, showcasing impressive architecture and ancient trade routes that offer visitors a fascinating glimpse into the past.</div>
-                </div>
-                <div class="card">
-                    <img src="images/Craftsmen market in Al-Ahsa.jpg" alt="Craftsmen Market in Al-Ahsa">
-                    <h3>Craftsmen Market in Al-Ahsa</h3>
-                    <div class="description">The Craftsmen Market in Al-Ahsa is a lively marketplace celebrating traditional crafts, showcasing the region's rich heritage and artisanal skills for visitors to explore.</div>
-                </div>
-                <div class="card">
-                    <img src="images/Edge of the World.jpg" alt="Edge of the World">
-                    <h3>Edge of the World</h3>
-                    <div class="description">The Edge of the World is an awe-inspiring destination near Riyadh, offering dramatic cliffs and stunning vistas of the surrounding wilderness, perfect for adventure seekers and nature enthusiasts alike.</div>
-                </div>
-                <div class="card">
-                    <img src="images/Face Rock formation in AlUla.jpg" alt="Face Rock">
-                    <h3>Face Rock</h3>
-                    <div class="description">Nestled in the ancient city of AlUla, Face Rock is a striking natural formation resembling a human profile, captivating visitors with its distinctive shape and stunning desert backdrop.</div>
-                </div>
-                <div class="card">
-                    <img src="images/MadianSaleh.JPG" alt="Madain Saleh">
-                    <h3>Madain Saleh</h3>
-                    <div class="description">Recognized as Saudi Arabia's most significant historical site, Madain Saleh is a UNESCO World Heritage Site located in Al-Ula. This remarkable area showcases the rich legacy of the Nabateans and their impressive rock-cut architecture, reflecting centuries of human history and cultural heritage.</div>
-                </div>
-                <div class="card">
-                    <img src="images/OldJeddah.jpg" alt="Jeddah Historic District">
-                    <h3>Jeddah Historic District</h3>
-                    <div class="description">The Jeddah Historic District is a vibrant UNESCO World Heritage Site known for its striking coral buildings, lively markets, and deep-rooted history as a former trading hub, providing visitors with a unique glimpse into the city’s rich cultural legacy.</div>
-                </div>
-                <div class="card">
-                    <img src="images/Pharaonic Tayma inscription.jpg" alt="Pharaonic Tayma Inscriptio">
-                    <h3>Pharaonic Tayma Inscriptio</h3>
-                    <div class="description">The Pharaonic Tayma inscription is a significant archaeological find located in the Tayma region, originating from the twelfth century B.C. This ancient artifact reveals fascinating details about the trade routes and interactions between ancient Egypt and the Arabian Peninsula.</div>
-                </div>
-                <div class="card">
-                    <img src="images/the Kaaba in al-Masjid al-Haram.jpg" alt="The Kaaba">
-                    <h3>The Kaaba</h3>
-                    <div class="description">Situated in Mecca's Grand Mosque, the Kaaba is revered as Islam's most sacred structure, representing the spiritual heart of the Muslim faith and the direction of prayer (Qiblah) for millions globally.</div>
-                </div>
-                <div class="card">
-                    <img src="images/Turaif.jpg" alt="At-Turaif">
-                    <h3>At-Turaif</h3>
-                    <div class="description">Nestled in the lush Wadi Hanifah, At-Turaif is a UNESCO World Heritage Site celebrated for its stunning Najdi architecture, once serving as the vibrant center of the Emirate of Diriyah and playing a significant role in the history of Saudi Arabia.</div>
-                </div>
-            </div>
-        </section>
-        <section id="Historical"></section>
-        <section id="FAQ"></section>
-        <section id="Contact"></section>
-    </main>
-    <script>
-    const hamburger = document.querySelector('.hamburger');
-    const navLinks = document.querySelector('.nav-links');
-    const navItems = document.querySelectorAll('.nav-links li'); // Select all links inside the nav
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Landmarks of Saudi Arabia</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img src="./Images/logo.png" alt="Logo" />
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li>
+            <a href="#Hero">Home</a>
+          </li>
+          <li>
+            <a href="#Landmarks">Landmarks</a>
+          </li>
+          <li>
+            <a href="#Historical">History</a>
+          </li>
+          <li>
+            <a href="#FAQ">FAQ</a>
+          </li>
+          <li>
+            <a href="#Contact">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+  </body>
+  <main>
+    <section id="Hero">
+      <div>
+        <h1>Discover the Majestic Landmarks of Saudi Arabia</h1>
+        <p>
+          Journey through time to witness the beauty and significance of this
+          great Kingdom
+        </p>
+        <button>
+          <a href="#Landmarks">Explore Now</a>
+        </button>
+      </div>
+      <video
+        autoplay
+        muted
+        loop
+        playsinline
+        class="hero-video"
+        disablePictureInPicture
+      >
+        <source src="./videos/KSA2.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </section>
+    <section id="Landmarks">
+      <div class="container">
+        <div class="card">
+          <img src="images/A'arifFort.jpg" alt="A'arif Fort" />
+          <h3>A'arif Fort</h3>
+          <div class="description">
+            A historical fort located in the city of Hail, A'arif Fort offers
+            stunning views from its mountain peak, featuring solid mud-brick
+            walls and impressive wooden doors, making it an ideal destination
+            for history enthusiasts and photographers alike.
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/Al Malad Castle.jpg" alt="Al Malad Castle" />
+          <h3>Al Malad Castle</h3>
+          <div class="description">
+            Nestled in the mountains of Saudi Arabia, Al Malad Castle is a
+            historical site built for military observation and food storage,
+            showcasing impressive architecture and ancient trade routes that
+            offer visitors a fascinating glimpse into the past.
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="images/Craftsmen market in Al-Ahsa.jpg"
+            alt="Craftsmen Market in Al-Ahsa"
+          />
+          <h3>Craftsmen Market in Al-Ahsa</h3>
+          <div class="description">
+            The Craftsmen Market in Al-Ahsa is a lively marketplace celebrating
+            traditional crafts, showcasing the region's rich heritage and
+            artisanal skills for visitors to explore.
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/Edge of the World.jpg" alt="Edge of the World" />
+          <h3>Edge of the World</h3>
+          <div class="description">
+            The Edge of the World is an awe-inspiring destination near Riyadh,
+            offering dramatic cliffs and stunning vistas of the surrounding
+            wilderness, perfect for adventure seekers and nature enthusiasts
+            alike.
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/Face Rock formation in AlUla.jpg" alt="Face Rock" />
+          <h3>Face Rock</h3>
+          <div class="description">
+            Nestled in the ancient city of AlUla, Face Rock is a striking
+            natural formation resembling a human profile, captivating visitors
+            with its distinctive shape and stunning desert backdrop.
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/MadianSaleh.JPG" alt="Madain Saleh" />
+          <h3>Madain Saleh</h3>
+          <div class="description">
+            Recognized as Saudi Arabia's most significant historical site,
+            Madain Saleh is a UNESCO World Heritage Site located in Al-Ula. This
+            remarkable area showcases the rich legacy of the Nabateans and their
+            impressive rock-cut architecture, reflecting centuries of human
+            history and cultural heritage.
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/OldJeddah.jpg" alt="Jeddah Historic District" />
+          <h3>Jeddah Historic District</h3>
+          <div class="description">
+            The Jeddah Historic District is a vibrant UNESCO World Heritage Site
+            known for its striking coral buildings, lively markets, and
+            deep-rooted history as a former trading hub, providing visitors with
+            a unique glimpse into the city’s rich cultural legacy.
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="images/Pharaonic Tayma inscription.jpg"
+            alt="Pharaonic Tayma Inscriptio"
+          />
+          <h3>Pharaonic Tayma Inscriptio</h3>
+          <div class="description">
+            The Pharaonic Tayma inscription is a significant archaeological find
+            located in the Tayma region, originating from the twelfth century
+            B.C. This ancient artifact reveals fascinating details about the
+            trade routes and interactions between ancient Egypt and the Arabian
+            Peninsula.
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="images/the Kaaba in al-Masjid al-Haram.jpg"
+            alt="The Kaaba"
+          />
+          <h3>The Kaaba</h3>
+          <div class="description">
+            Situated in Mecca's Grand Mosque, the Kaaba is revered as Islam's
+            most sacred structure, representing the spiritual heart of the
+            Muslim faith and the direction of prayer (Qiblah) for millions
+            globally.
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/Turaif.jpg" alt="At-Turaif" />
+          <h3>At-Turaif</h3>
+          <div class="description">
+            Nestled in the lush Wadi Hanifah, At-Turaif is a UNESCO World
+            Heritage Site celebrated for its stunning Najdi architecture, once
+            serving as the vibrant center of the Emirate of Diriyah and playing
+            a significant role in the history of Saudi Arabia.
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="Historical"></section>
+    <section id="FAQ"></section>
+    <section id="Contact"></section>
+  </main>
+  <script>
+    const hamburger = document.querySelector('.hamburger')
+    const navLinks = document.querySelector('.nav-links')
+    const navItems = document.querySelectorAll('.nav-links li') // Select all links inside the nav
 
     // Toggle navigation when hamburger is clicked
     hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('nav-active');
-    hamburger.classList.toggle('toggle');
-});
+      navLinks.classList.toggle('nav-active')
+      hamburger.classList.toggle('toggle')
+    })
 
     // Close menu when a link is clicked
     navItems.forEach(item => {
-    item.addEventListener('click', () => {
-        navLinks.classList.remove('nav-active'); // Close the menu
-        hamburger.classList.remove('toggle');    // Reset the hamburger icon
-    });
-});
-    </script>
+      item.addEventListener('click', () => {
+        navLinks.classList.remove('nav-active') // Close the menu
+        hamburger.classList.remove('toggle') // Reset the hamburger icon
+      })
+    })
+  </script>
 </html>
