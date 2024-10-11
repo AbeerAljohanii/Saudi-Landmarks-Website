@@ -221,8 +221,8 @@ h3 {
 
 .reviews-container {
     display: flex;
-    width: calc(100% * 2);
-    animation: marquee 20s linear infinite;
+    width: max-content;
+    animation: marquee 60s linear infinite;
 }
 
 .reviews-container:hover {
@@ -237,7 +237,8 @@ h3 {
     margin-right: 20px;
     display: flex;
     align-items: center;
-    min-width: 350px;
+    min-width: 300px;
+    max-width: 90vw;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -257,7 +258,7 @@ h3 {
     }
 
     to {
-        transform: translateX(-50%);
+        transform: translateX(-100%);
     }
 }
 
