@@ -1,4 +1,3 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,7 +12,9 @@
 <body>
   <header class="header">
     <div class="logo">
-      <img src="./Images/logo.png" alt="Logo" />
+      <a href="#Hero">
+        <img src="./Images/logo.png" alt="Logo" style="cursor: pointer;" />
+      </a>
     </div>
     <nav>
       <ul class="nav-links">
@@ -235,7 +236,46 @@
         </form>
       </div>
     </section>
-
+    <section id="FAQ">
+      <div class="faq-container">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq">
+          <button class="faq-question" aria-expanded="false">
+            What is the best time to visit Saudi Arabia?
+          </button>
+          <div class="faq-answer">
+            <p>
+              The best time to visit Saudi Arabia is during the cooler months, from
+              November to February, when temperatures are more comfortable for
+              outdoor activities.
+            </p>
+          </div>
+        </div>
+        <div class="faq">
+          <button class="faq-question" aria-expanded="false">
+            What are the visa requirements for visiting Saudi Arabia?
+          </button>
+          <div class="faq-answer">
+            <p>
+              You can apply for a tourist visa online through the official Saudi
+              tourism website. Citizens from certain countries can obtain a visa on
+              arrival.
+            </p>
+          </div>
+        </div>
+        <div class="faq">
+          <button class="faq-question" aria-expanded="false">
+            Are there guided tours available for landmarks?
+          </button>
+          <div class="faq-answer">
+            <p>
+              Yes, guided tours are available for many popular landmarks. You can
+              book tours online or at tourist centers in major cities.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
     <footer>
       <div class="footer-container">
         <div class="footer-logo">
@@ -250,7 +290,7 @@
             <li><a href="#Contact">Contact Us </a></li>
           </ul>
         </div>
-        <div class="footer-contact">
+        <div id="Contact" class="footer-contact">
           <p>
             Email:
             <a href="mailto:saudi-future@ksa.com">saudi-future@ksa.com</a>
@@ -267,8 +307,6 @@
         &copy; 2024 Your Company Name. All Rights Reserved.
       </div>
     </footer>
-    <section id="FAQ"></section>
-    <section id="Contact"></section>
   </main>
 </body>
 <script>
@@ -284,6 +322,15 @@
       item.addEventListener('click', () => {
         navLinks.classList.remove('nav-active')
         hamburger.classList.remove('toggle')
+      });
+    });
+  });
+  document.addEventListener('DOMContentLoaded', () => {
+    const faqQuestions = document.querySelectorAll('.faq-question');
+    faqQuestions.forEach((button) => {
+      button.addEventListener('click', () => {
+        const expanded = button.getAttribute('aria-expanded') === 'true';
+        button.setAttribute('aria-expanded', !expanded);
       });
     });
   });
